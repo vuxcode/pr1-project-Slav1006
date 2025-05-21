@@ -1,0 +1,96 @@
+<meta name="color-scheme" content="dark">
+
+<script> 
+// A small intro to the quiz! 
+alert("Welcome to my quiz, my name is Slav and I am 21 years old. I am studying programmering currently and this is a test. So the first couple of questions will be me getting to know you, later in the quiz it will be math based. Lets see what you got!")
+
+// Here i will have the variables, i will add the variables into an array! 
+var username = "Fill in your username to proceed to the next question!";
+var game = "What is your favourite game?"; 
+var destination = "What is your favourite destination to visit one day?"; 
+var hobby = "Any hobbies or interests you pursue in your free time?"; 
+// Starting score before the quiz starts
+var score = 0; 
+// 
+var career = "Tell me more then, what do you do in your everyday life? Do you work or study?";
+var age = "Last question, how old am i?";
+
+var part1 = [prompt(username), prompt(game), prompt(destination), prompt(hobby), prompt(career), prompt(age)]; 
+
+if (part1[4] == "work") {
+    alert("Oh that is super cool, I would love to hang out and know more about that")
+}
+if (career == "study") {
+    alert("I see, so you are studying at the moment, would love to hang out and learn more")
+}
+// 
+if (part1[5] == 21) {
+    alert("Yes, I am 21 years old! "); 
+}
+else {
+alert("No that is incorrect the answer is 21 "); 
+} 
+
+for (var index = 0; index < part1.length; index++) {
+    var SaveInput = alert(part1[index]); 
+}
+
+
+// if () {} = if statement "We can tell the program what to do IF the input matches a condition." 
+// The math part, is simply an experiment and a homework! 
+// Here i will display the if and else statements 
+
+alert("Here comes the math part, please only answer in numbers!")
+
+// Question A:
+var math1 = prompt("We will start off easy, what is 1 + 1?")
+if (math1 == 2) {
+    alert("Yes the answer is indeed " + math1 + "you earned yourself 5 points"); 
+    score += 5; 
+}
+else {
+    alert("No unfortunatley that is the wrong answer, go back to school!")
+}
+
+// Question B:
+var math2 = prompt("Lets take it a step further, what is 5 - 2?")
+if (math2 == 4) {
+    alert("Correct, well done! the answer is " + math2); 
+}
+else {
+    alert("No that is not correct, perhaps you need to train a bit more!")
+}
+
+// Question C:
+var math3 = prompt("Now it will start getting harder, what is 12 / 3?")
+if (math3 == 4) {
+    alert("Great job so far, the answer is " + math3); 
+}
+else {
+    alert("No that is not correct, perhaps we found your weakness!")
+}
+
+// Question D:
+var math4 = prompt("How about this then, what is 9 * 3?")
+if (math4 == 27) {
+    alert("You are almost there, well done! the answer is " + math4); 
+}
+else {
+    alert("Incorrect, that was not correct, I got you!")
+}
+
+// Question E:
+var math5 = prompt("Here comes the final boss, what is 8 * 7?")
+if (math5 == 56) {
+    alert("That was the last question and you totally smashed it, well done! the answer is " + math5); 
+}
+else {
+    alert("Unfortunately that was not correct, I won!")
+}
+
+
+// At the end of the quiz, to thank the person for taking part of this!
+document.write("Hope you have a great day and thank you for answering the questions!" + "<br>"); 
+document.write("And good job on the math questions, i am really impressed by your performance!" + "<br>"); 
+</script> 
+ 
